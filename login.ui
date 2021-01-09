@@ -6,21 +6,32 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>802</width>
+    <height>603</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Login screen</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(spread:pad, x1:0.433199, y1:0.506, x2:0.502, y2:0.437591, stop:0 rgba(90, 90, 255, 255), stop:0.606965 rgba(174, 135, 179, 255));</string>
+  </property>
   <layout class="QGridLayout" name="gridLayout">
-   <item row="0" column="1">
+   <item row="0" column="0">
     <widget class="QTabWidget" name="tabWidget">
+     <property name="styleSheet">
+      <string notr="true">border-width:5px;
+background-color: qlineargradient(spread:pad, x1:0.379124, y1:0.552, x2:0.418294, y2:0.552, stop:0 rgba(255, 213, 104, 241), stop:1 rgba(255, 255, 255, 255));
+border-style:solid;
+border-color:rgb(0,0,0,0);
+border-radius:20px;
+</string>
+     </property>
      <property name="tabPosition">
       <enum>QTabWidget::West</enum>
      </property>
      <property name="currentIndex">
-      <number>0</number>
+      <number>1</number>
      </property>
      <widget class="QWidget" name="tab">
       <attribute name="title">
@@ -29,11 +40,14 @@
       <widget class="QWidget" name="widget" native="true">
        <property name="geometry">
         <rect>
-         <x>60</x>
-         <y>60</y>
-         <width>241</width>
-         <height>161</height>
+         <x>330</x>
+         <y>130</y>
+         <width>381</width>
+         <height>251</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:none;</string>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_2">
         <item>
@@ -42,13 +56,38 @@
            <layout class="QHBoxLayout" name="horizontalLayout">
             <item>
              <widget class="QLabel" name="label">
+              <property name="font">
+               <font>
+                <pointsize>12</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">border-radius:0px;
+border:none;
+background:rgb(0,0,0,0);
+color:rgb(0, 0, 127)</string>
+              </property>
               <property name="text">
                <string>Admin Id</string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QLineEdit" name="admin_id"/>
+             <widget class="QLineEdit" name="admin_id">
+              <property name="font">
+               <font>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(201, 199, 255,0.5);
+border-width:0px;
+padding:5px;
+padding-left:10px;</string>
+              </property>
+             </widget>
             </item>
            </layout>
           </item>
@@ -56,13 +95,38 @@
            <layout class="QHBoxLayout" name="horizontalLayout_2">
             <item>
              <widget class="QLabel" name="label_2">
+              <property name="font">
+               <font>
+                <pointsize>12</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">border-radius:0px;
+border:none;
+background:rgb(0,0,0,0);
+color:rgb(0, 0, 127)</string>
+              </property>
               <property name="text">
                <string>Password</string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QLineEdit" name="admin_password"/>
+             <widget class="QLineEdit" name="admin_password">
+              <property name="font">
+               <font>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(201, 199, 255,0.5);
+border-width:0px;
+padding:5px;
+padding-left:10px;</string>
+              </property>
+             </widget>
             </item>
            </layout>
           </item>
@@ -70,12 +134,74 @@
         </item>
         <item>
          <widget class="QPushButton" name="adminLogin">
+          <property name="font">
+           <font>
+            <pointsize>16</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(207, 207, 255);
+color: rgb(0, 85, 255);
+border-radius:10px;</string>
+          </property>
           <property name="text">
            <string>Login</string>
           </property>
          </widget>
         </item>
        </layout>
+      </widget>
+      <widget class="QLabel" name="label_7">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>140</y>
+         <width>141</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>26</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width:0px;
+background:rgb(0,0,0,0)</string>
+       </property>
+       <property name="text">
+        <string>Admin</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_8">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>210</y>
+         <width>121</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>26</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width:0px;
+background:rgb(0,0,0,0)</string>
+       </property>
+       <property name="text">
+        <string>Login</string>
+       </property>
       </widget>
      </widget>
      <widget class="QWidget" name="tab_2">
@@ -85,11 +211,14 @@
       <widget class="QWidget" name="widget_2" native="true">
        <property name="geometry">
         <rect>
-         <x>60</x>
-         <y>60</y>
-         <width>241</width>
-         <height>161</height>
+         <x>330</x>
+         <y>130</y>
+         <width>381</width>
+         <height>251</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color:none;</string>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_4">
         <item>
@@ -98,13 +227,38 @@
            <layout class="QHBoxLayout" name="horizontalLayout_3">
             <item>
              <widget class="QLabel" name="label_3">
+              <property name="font">
+               <font>
+                <pointsize>12</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">border-radius:0px;
+border:none;
+background:rgb(0,0,0,0);
+color:rgb(0, 0, 127)</string>
+              </property>
               <property name="text">
                <string>Acco. No.</string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QLineEdit" name="user_account"/>
+             <widget class="QLineEdit" name="user_account">
+              <property name="font">
+               <font>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(201, 199, 255,0.5);
+border-width:0px;
+padding:5px;
+padding-left:10px;</string>
+              </property>
+             </widget>
             </item>
            </layout>
           </item>
@@ -112,13 +266,38 @@
            <layout class="QHBoxLayout" name="horizontalLayout_4">
             <item>
              <widget class="QLabel" name="label_4">
+              <property name="font">
+               <font>
+                <pointsize>12</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">border-radius:0px;
+border:none;
+background:rgb(0,0,0,0);
+color:rgb(0, 0, 127)</string>
+              </property>
               <property name="text">
                <string> Password</string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QLineEdit" name="user_password"/>
+             <widget class="QLineEdit" name="user_password">
+              <property name="font">
+               <font>
+                <pointsize>12</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(201, 199, 255,0.5);
+border-width:0px;
+padding:5px;
+padding-left:10px;</string>
+              </property>
+             </widget>
             </item>
            </layout>
           </item>
@@ -126,12 +305,74 @@
         </item>
         <item>
          <widget class="QPushButton" name="userLogin">
+          <property name="font">
+           <font>
+            <pointsize>16</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(207, 207, 255);
+color: rgb(0, 85, 255);
+border-radius:10px;</string>
+          </property>
           <property name="text">
            <string>Login</string>
           </property>
          </widget>
         </item>
        </layout>
+      </widget>
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>160</y>
+         <width>111</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>26</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width:0px;
+background:rgb(0,0,0,0)</string>
+       </property>
+       <property name="text">
+        <string>Users</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>230</y>
+         <width>121</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>26</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-width:0px;
+background:rgb(0,0,0,0)</string>
+       </property>
+       <property name="text">
+        <string>Login</string>
+       </property>
       </widget>
      </widget>
     </widget>

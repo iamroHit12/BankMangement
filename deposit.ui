@@ -6,215 +6,230 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>801</width>
+    <height>601</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:qlineargradient(spread:pad, x1:0.433199, y1:0.506, x2:0.502, y2:0.437591, stop:0 rgba(90, 90, 255, 255), stop:0.606965 rgba(174, 135, 179, 255));</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLabel" name="label">
+   <widget class="QFrame" name="frame">
     <property name="geometry">
      <rect>
-      <x>220</x>
-      <y>0</y>
-      <width>341</width>
-      <height>101</height>
+      <x>50</x>
+      <y>40</y>
+      <width>721</width>
+      <height>501</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>24</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
+    <property name="styleSheet">
+     <string notr="true">border-width:5px;
+background-color: qlineargradient(spread:pad, x1:0.379124, y1:0.552, x2:0.418294, y2:0.552, stop:0 rgba(255, 213, 104, 241), stop:1 rgba(255, 255, 255, 255));
+border-style:solid;
+border-color:rgb(0,0,0,0);
+border-radius:20px;
+</string>
     </property>
-    <property name="text">
-     <string>Deposit Amount</string>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
     </property>
-   </widget>
-   <widget class="Line" name="line">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>100</y>
-      <width>801</width>
-      <height>20</height>
-     </rect>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
     </property>
-    <property name="orientation">
-     <enum>Qt::Horizontal</enum>
-    </property>
-   </widget>
-   <widget class="Line" name="line_2">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>440</y>
-      <width>801</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Horizontal</enum>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_deposit">
-    <property name="geometry">
-     <rect>
-      <x>180</x>
-      <y>470</y>
-      <width>141</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>Deposit</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="pushButton_mainmenu">
-    <property name="geometry">
-     <rect>
-      <x>450</x>
-      <y>470</y>
-      <width>151</width>
-      <height>51</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>14</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
-     </font>
-    </property>
-    <property name="text">
-     <string>Main Menu</string>
-    </property>
-   </widget>
-   <widget class="QWidget" name="layoutWidget">
-    <property name="geometry">
-     <rect>
-      <x>190</x>
-      <y>140</y>
-      <width>181</width>
-      <height>261</height>
-     </rect>
-    </property>
-    <layout class="QVBoxLayout" name="verticalLayout">
-     <item>
-      <widget class="QLabel" name="label_2">
-       <property name="font">
-        <font>
-         <pointsize>12</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>Account No.</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QLabel" name="label_3">
-       <property name="font">
-        <font>
-         <pointsize>12</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>Customer Name</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QLabel" name="label_4">
-       <property name="font">
-        <font>
-         <pointsize>12</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>Date</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QLabel" name="label_5">
-       <property name="font">
-        <font>
-         <pointsize>12</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
-        </font>
-       </property>
-       <property name="text">
-        <string>Amount</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QWidget" name="layoutWidget">
-    <property name="geometry">
-     <rect>
-      <x>390</x>
-      <y>120</y>
-      <width>321</width>
-      <height>301</height>
-     </rect>
-    </property>
-    <layout class="QVBoxLayout" name="verticalLayout_2">
-     <item>
-      <widget class="QLineEdit" name="lineEdit">
-       <property name="font">
-        <font>
-         <pointsize>12</pointsize>
-        </font>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QLineEdit" name="lineEdit_2">
-       <property name="font">
-        <font>
-         <pointsize>12</pointsize>
-        </font>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QDateEdit" name="dateEdit">
-       <property name="font">
-        <font>
-         <pointsize>12</pointsize>
-        </font>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QLineEdit" name="lineEdit_3">
-       <property name="font">
-        <font>
-         <pointsize>12</pointsize>
-        </font>
-       </property>
-      </widget>
-     </item>
-    </layout>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>180</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius:0px;
+border:none;
+background:rgb(0,0,0,0);
+color:rgb(0, 0, 127)</string>
+     </property>
+     <property name="text">
+      <string>Amount</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>110</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius:0px;
+border:none;
+background:rgb(0,0,0,0);
+color:rgb(0, 0, 127)</string>
+     </property>
+     <property name="text">
+      <string>Date</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_deposit">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>240</y>
+       <width>231</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(207, 207, 255);
+color: rgb(0, 85, 255);
+border-radius:10px;</string>
+     </property>
+     <property name="text">
+      <string>Deposit</string>
+     </property>
+    </widget>
+    <widget class="QDateEdit" name="dateEdit">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>110</y>
+       <width>181</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(201, 199, 255,0.5);
+border-width:0px;</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_mainmenu">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>310</y>
+       <width>151</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(207, 207, 255);
+color: rgb(0, 85, 255);
+border-radius:10px;</string>
+     </property>
+     <property name="text">
+      <string>Main Menu</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_3">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>180</y>
+       <width>181</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(201, 199, 255,0.5);
+border-width:0px;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>140</y>
+       <width>181</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Times New Roman</family>
+       <pointsize>26</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-width:0px;
+background:rgb(0,0,0,0)</string>
+     </property>
+     <property name="text">
+      <string>Deposit</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>190</y>
+       <width>191</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Times New Roman</family>
+       <pointsize>26</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-width:0px;
+background:rgb(0,0,0,0)</string>
+     </property>
+     <property name="text">
+      <string>Amount</string>
+     </property>
+    </widget>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -222,12 +237,11 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>801</width>
      <height>26</height>
     </rect>
    </property>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
  <connections/>

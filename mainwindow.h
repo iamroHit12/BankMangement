@@ -12,10 +12,8 @@ typedef struct user{
     QString name;
     int account;
     QString password;
-    QString fathers_name;
     QString gender;
     QString account_type;
-    QString occupation;
     QString dob;
     QString phone;
     QString aadhar;
