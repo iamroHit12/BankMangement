@@ -94,9 +94,9 @@ border-radius:10px;</string>
     <widget class="QLabel" name="label">
      <property name="geometry">
       <rect>
-       <x>330</x>
+       <x>340</x>
        <y>150</y>
-       <width>181</width>
+       <width>211</width>
        <height>31</height>
       </rect>
      </property>
@@ -120,9 +120,9 @@ color:rgb(0, 0, 127)</string>
     <widget class="QLabel" name="label_2">
      <property name="geometry">
       <rect>
-       <x>370</x>
+       <x>340</x>
        <y>100</y>
-       <width>71</width>
+       <width>101</width>
        <height>31</height>
       </rect>
      </property>
@@ -146,9 +146,9 @@ color:rgb(0, 0, 127)</string>
     <widget class="QLabel" name="label_3">
      <property name="geometry">
       <rect>
-       <x>360</x>
+       <x>340</x>
        <y>200</y>
-       <width>101</width>
+       <width>131</width>
        <height>41</height>
       </rect>
      </property>
@@ -172,9 +172,9 @@ color:rgb(0, 0, 127)</string>
     <widget class="QDateEdit" name="dateEdit">
      <property name="geometry">
       <rect>
-       <x>520</x>
+       <x>550</x>
        <y>100</y>
-       <width>121</width>
+       <width>131</width>
        <height>31</height>
       </rect>
      </property>
@@ -191,9 +191,9 @@ border-width:0px;</string>
     <widget class="QLineEdit" name="lineEdit">
      <property name="geometry">
       <rect>
-       <x>520</x>
+       <x>550</x>
        <y>150</y>
-       <width>121</width>
+       <width>131</width>
        <height>31</height>
       </rect>
      </property>
@@ -205,9 +205,9 @@ border-width:0px;</string>
     <widget class="QLineEdit" name="lineEdit_2">
      <property name="geometry">
       <rect>
-       <x>520</x>
+       <x>550</x>
        <y>200</y>
-       <width>121</width>
+       <width>131</width>
        <height>31</height>
       </rect>
      </property>
@@ -221,7 +221,7 @@ border-width:0px;</string>
       <rect>
        <x>60</x>
        <y>110</y>
-       <width>171</width>
+       <width>211</width>
        <height>51</height>
       </rect>
      </property>
@@ -246,7 +246,7 @@ background:rgb(0,0,0,0)</string>
       <rect>
        <x>60</x>
        <y>160</y>
-       <width>161</width>
+       <width>201</width>
        <height>61</height>
       </rect>
      </property>
@@ -274,7 +274,7 @@ background:rgb(0,0,0,0)</string>
      <x>0</x>
      <y>0</y>
      <width>802</width>
-     <height>26</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>

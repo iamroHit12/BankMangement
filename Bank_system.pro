@@ -11,32 +11,36 @@ CONFIG += c++11
 SOURCES += \
     admin.cpp \
     deposit.cpp \
-    form.cpp \
     login.cpp \
     main.cpp \
     mainpage.cpp \
     mainwindow.cpp \
     transfer.cpp \
+    userlist.cpp \
+    usertransactions.cpp \
     withdraw.cpp
 
 HEADERS += \
     admin.h \
     deposit.h \
-    form.h \
     login.h \
     mainpage.h \
     mainwindow.h \
+    transaction.h \
     transfer.h \
+    userlist.h \
+    usertransactions.h \
     withdraw.h
 
 FORMS += \
     admin.ui \
     deposit.ui \
-    form.ui \
     login.ui \
     mainpage.ui \
     mainwindow.ui \
     transfer.ui \
+    userlist.ui \
+    usertransactions.ui \
     withdraw.ui
 
 # Default rules for deployment.

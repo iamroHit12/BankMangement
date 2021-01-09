@@ -5,6 +5,8 @@
 #include <QString>
 #include "QDebug"
 #include <QMessageBox>
+#include<QDate>
+#include "transaction.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::MainWindow)
@@ -47,8 +49,15 @@ void MainWindow::on_pushButton_clicked()
     QString dob = ui->dateEdit->text();
     int opening_amount = (ui->min_amount->text()).toInt();
 
+    Transaction *new_transaction = new Transaction();
+    new_transaction->type = "Deposit";
+    new_transaction->amount=opening_amount;
+    new_transaction->next=0;
+
     User *user = new User();
+
     user->name = name;
+    user->transaction = new_transaction;
     user->aadhar = aadhar;
     user->gender = gender;
     user->account_type = account_type;

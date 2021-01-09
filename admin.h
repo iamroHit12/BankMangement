@@ -28,6 +28,10 @@ private slots:
 
     void on_logout_clicked();
 
+    void on_pushButton_clicked();
+
+    void on_transactions_clicked();
+
 private:
     Ui::Admin *ui;
 };

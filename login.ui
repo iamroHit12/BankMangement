@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>802</width>
+    <width>900</width>
     <height>603</height>
    </rect>
   </property>
@@ -31,7 +31,7 @@ border-radius:20px;
       <enum>QTabWidget::West</enum>
      </property>
      <property name="currentIndex">
-      <number>1</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="tab">
       <attribute name="title">
@@ -40,8 +40,8 @@ border-radius:20px;
       <widget class="QWidget" name="widget" native="true">
        <property name="geometry">
         <rect>
-         <x>330</x>
-         <y>130</y>
+         <x>430</x>
+         <y>120</y>
          <width>381</width>
          <height>251</height>
         </rect>
@@ -158,7 +158,7 @@ border-radius:10px;</string>
         <rect>
          <x>70</x>
          <y>140</y>
-         <width>141</width>
+         <width>191</width>
          <height>51</height>
         </rect>
        </property>
@@ -183,7 +183,7 @@ background:rgb(0,0,0,0)</string>
         <rect>
          <x>80</x>
          <y>210</y>
-         <width>121</width>
+         <width>181</width>
          <height>61</height>
         </rect>
        </property>
@@ -211,8 +211,8 @@ background:rgb(0,0,0,0)</string>
       <widget class="QWidget" name="widget_2" native="true">
        <property name="geometry">
         <rect>
-         <x>330</x>
-         <y>130</y>
+         <x>400</x>
+         <y>150</y>
          <width>381</width>
          <height>251</height>
         </rect>
@@ -329,7 +329,7 @@ border-radius:10px;</string>
         <rect>
          <x>80</x>
          <y>160</y>
-         <width>111</width>
+         <width>171</width>
          <height>61</height>
         </rect>
        </property>
@@ -354,7 +354,7 @@ background:rgb(0,0,0,0)</string>
         <rect>
          <x>80</x>
          <y>230</y>
-         <width>121</width>
+         <width>181</width>
          <height>61</height>
         </rect>
        </property>
