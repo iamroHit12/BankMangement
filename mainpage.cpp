@@ -2,15 +2,19 @@
 #include"mainwindow.h"
 #include"login.h"
 #include "ui_mainpage.h"
+#include<QDebug>
 head MainPage::user;
 MainPage::MainPage(QWidget *parent,head ptr) :
-
     QMainWindow(parent),
     ui(new Ui::MainPage)
 {
     ui->setupUi(this);
+    MainWindow::session="user";
     ui->name->setText(ptr->name);
-    user=ptr;
+    if(ptr)
+    {
+         user=ptr;
+    }
 }
 
 MainPage::~MainPage()
@@ -21,28 +25,21 @@ MainPage::~MainPage()
 void MainPage::on_pushButton_withdraw_clicked()
 {
     hide();
-    Withdraw = new withdraw();
+    Withdraw = new withdraw(nullptr,user);
     Withdraw->show();
-}
-
-void MainPage::on_pushButton_openaccount_clicked()
-{
-    hide();
-    mainwindow = new MainWindow(this);
-    mainwindow->show();
 }
 
 void MainPage::on_pushButton_deposit_clicked()
 {
     hide();
-    Deposit = new deposit(this);
+    Deposit = new deposit(nullptr,user);
     Deposit->show();
 }
 
 void MainPage::on_pushButton_transfer_clicked()
 {
     hide();
-    Transfer = new transfer(this);
+    Transfer = new transfer(nullptr,user);
     Transfer->show();
 }
 

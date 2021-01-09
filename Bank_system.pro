@@ -11,6 +11,7 @@ CONFIG += c++11
 SOURCES += \
     admin.cpp \
     deposit.cpp \
+    form.cpp \
     login.cpp \
     main.cpp \
     mainpage.cpp \
@@ -21,6 +22,7 @@ SOURCES += \
 HEADERS += \
     admin.h \
     deposit.h \
+    form.h \
     login.h \
     mainpage.h \
     mainwindow.h \
@@ -30,6 +32,7 @@ HEADERS += \
 FORMS += \
     admin.ui \
     deposit.ui \
+    form.ui \
     login.ui \
     mainpage.ui \
     mainwindow.ui \

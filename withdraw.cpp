@@ -1,12 +1,16 @@
 #include "withdraw.h"
 #include "ui_withdraw.h"
+#include"admin.h"
 #include "mainpage.h"
+#include<QDebug>
 
-withdraw::withdraw(QWidget *parent) :
+withdraw::withdraw(QWidget *parent,head user) :
     QMainWindow(parent),
+    user(user),
     ui(new Ui::withdraw)
 {
     ui->setupUi(this);
+
 }
 
 withdraw::~withdraw()
@@ -17,7 +21,31 @@ withdraw::~withdraw()
 
 void withdraw::on_pushButton_clicked()
 {
-    MainPage *mainPage = new MainPage();
-    mainPage->show();
+    if(MainWindow::session=="user")
+    {
+        MainPage *mainPage = new MainPage(nullptr,user);
+        mainPage->show();
+    }
+    else
+    {
+        Admin *admin = new Admin();
+        admin->show();
+    }
     this->hide();
+}
+
+void withdraw::on_pushButton_main_clicked()
+{
+    int amount = ui->lineEdit_3->text().toInt();
+    if(user->balance<amount)
+    {
+
+        qDebug()<<"Not allowed low balance";
+    }
+    else
+    {
+        user->balance-=amount;
+
+        qDebug()<<"transaction completed";
+    }
 }

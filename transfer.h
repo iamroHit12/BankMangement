@@ -1,5 +1,6 @@
 #ifndef TRANSFER_H
 #define TRANSFER_H
+#include "mainwindow.h"
 
 #include <QMainWindow>
 
@@ -12,11 +13,14 @@ class transfer : public QMainWindow
     Q_OBJECT
 
 public:
-    explicit transfer(QWidget *parent = nullptr);
+    head user;
+    explicit transfer(QWidget *parent = nullptr,head user=nullptr);
     ~transfer();
 
 private slots:
     void on_pushButton_main_clicked();
+
+    void on_pushButton_clicked();
 
 private:
     Ui::transfer *ui;

@@ -1,6 +1,7 @@
 #ifndef ADMIN_H
 #define ADMIN_H
 #include <QWidget>
+#include"mainwindow.h"
 namespace Ui {
 class Admin;
 }
@@ -10,7 +11,7 @@ class Admin : public QWidget
     Q_OBJECT
 
 public:
-
+    head user;
     explicit Admin(QWidget *parent = nullptr);
     ~Admin();
 

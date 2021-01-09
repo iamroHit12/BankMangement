@@ -2,6 +2,7 @@
 #define DEPOSIT_H
 
 #include <QMainWindow>
+#include "mainwindow.h"
 
 namespace Ui {
 class deposit;
@@ -12,7 +13,8 @@ class deposit : public QMainWindow
     Q_OBJECT
 
 public:
-    explicit deposit(QWidget *parent = nullptr);
+    head user;
+    explicit deposit(QWidget *parent = nullptr,head user=nullptr);
     ~deposit();
 
 private slots:

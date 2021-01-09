@@ -12,6 +12,7 @@ Admin::Admin(QWidget *parent) :
 {
     ui->setupUi(this);
     ui->userInfo->hide();
+    MainWindow::session="admin";
 }
 
 Admin::~Admin()
@@ -21,21 +22,21 @@ Admin::~Admin()
 
 void Admin::on_moneWithdrawal_clicked()
 {
-    withdraw *w = new withdraw();
+    withdraw *w = new withdraw(nullptr,user);
     w->show();
     this->hide();
 }
 
 void Admin::on_moneyDeposit_clicked()
 {
-    deposit *d = new deposit();
+    deposit *d = new deposit(nullptr,user);
     d->show();
     this->hide();
 }
 
 void Admin::on_moneyTransfer_clicked()
 {
-    transfer *t = new transfer();
+    transfer *t = new transfer(nullptr,user);
     t->show();
     this->hide();
 }
@@ -57,6 +58,7 @@ void Admin::on_searchUser_clicked()
           {
               flag=true;
               qDebug()<<account;
+              user=temp;
               break;
           }
           else{

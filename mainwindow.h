@@ -29,6 +29,7 @@ class MainWindow : public QMainWindow
 
 public:
     static head user_top  ;
+    static QString session;
     static int count;
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();

@@ -16,8 +16,8 @@
   <property name="styleSheet">
    <string notr="true"/>
   </property>
-  <layout class="QGridLayout" name="gridLayout_3">
-   <item row="0" column="0">
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
     <layout class="QHBoxLayout" name="horizontalLayout_2">
      <item>
       <layout class="QHBoxLayout" name="horizontalLayout">
@@ -75,7 +75,7 @@
      </item>
     </layout>
    </item>
-   <item row="1" column="0">
+   <item>
     <spacer name="verticalSpacer">
      <property name="orientation">
       <enum>Qt::Vertical</enum>
@@ -88,7 +88,7 @@
      </property>
     </spacer>
    </item>
-   <item row="2" column="0">
+   <item>
     <widget class="QWidget" name="userInfo" native="true">
      <property name="styleSheet">
       <string notr="true">background-color:white</string>
@@ -286,7 +286,7 @@ color:white;</string>
      </layout>
     </widget>
    </item>
-   <item row="3" column="0">
+   <item>
     <spacer name="verticalSpacer_3">
      <property name="orientation">
       <enum>Qt::Vertical</enum>
@@ -299,7 +299,7 @@ color:white;</string>
      </property>
     </spacer>
    </item>
-   <item row="4" column="0">
+   <item>
     <spacer name="verticalSpacer_2">
      <property name="orientation">
       <enum>Qt::Vertical</enum>

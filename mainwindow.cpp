@@ -19,6 +19,7 @@ MainWindow::~MainWindow()
 }
 head MainWindow::user_top;
 int MainWindow::count;
+QString MainWindow::session;
 head next;
 bool first = true;
 QString gender_name[2] = {"Male", "Female"};
@@ -43,10 +44,9 @@ void MainWindow::on_pushButton_clicked()
 {
     QString name = ui->customer_name->text();
     QString aadhar = ui->aadhar_no->text();
-    QString occupation = ui->occupation_name->text();
     QString gender = gender_name[ui->gender->currentIndex()];
     QString account_type = type[ui->account_type->currentIndex()];
-    QString father_name = ui->fathers_name->text();
+
     QString number = ui->phone_no->text();
     QString dob=ui->dateEdit->text();
     int opening_amount = (ui->min_amount->text()).toInt();
@@ -54,11 +54,9 @@ void MainWindow::on_pushButton_clicked()
     User *user = new User();
     user->name =name;
     user->aadhar =aadhar;
-    user->occupation =occupation;
     user->gender=gender;
     user->account_type=account_type;
     user->balance =opening_amount;
-    user->fathers_name=father_name;
     user->phone=number;
     user->dob=dob;
     user->account=count;
@@ -66,7 +64,6 @@ void MainWindow::on_pushButton_clicked()
     user->password= password;
     user->next=0;
 
-    qDebug()<<user->next;
     if(first)
      {
      user_top=user;

@@ -127,6 +127,9 @@ color:red;
           <bold>true</bold>
          </font>
         </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:rgb(75, 255, 240);</string>
+        </property>
         <property name="text">
          <string>Transfer</string>
         </property>
@@ -154,6 +157,10 @@ color:red;
           <weight>75</weight>
           <bold>true</bold>
          </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color:red;
+color:white</string>
         </property>
         <property name="text">
          <string>Balance Inquiry</string>

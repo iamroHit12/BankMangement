@@ -60,20 +60,6 @@
        </widget>
       </item>
       <item>
-       <widget class="QLabel" name="label_4">
-        <property name="font">
-         <font>
-          <pointsize>10</pointsize>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>Father's Name</string>
-        </property>
-       </widget>
-      </item>
-      <item>
        <widget class="QLabel" name="label_5">
         <property name="font">
          <font>
@@ -121,15 +107,6 @@
      <layout class="QVBoxLayout" name="verticalLayout_2">
       <item>
        <widget class="QLineEdit" name="customer_name">
-        <property name="font">
-         <font>
-          <pointsize>10</pointsize>
-         </font>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLineEdit" name="fathers_name">
         <property name="font">
          <font>
           <pointsize>10</pointsize>
@@ -212,20 +189,6 @@
        </widget>
       </item>
       <item>
-       <widget class="QLabel" name="label_11">
-        <property name="font">
-         <font>
-          <pointsize>10</pointsize>
-          <weight>75</weight>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>Occupation</string>
-        </property>
-       </widget>
-      </item>
-      <item>
        <widget class="QLabel" name="label_12">
         <property name="font">
          <font>
@@ -264,15 +227,6 @@
       </item>
       <item>
        <widget class="QLineEdit" name="aadhar_no">
-        <property name="font">
-         <font>
-          <pointsize>10</pointsize>
-         </font>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLineEdit" name="occupation_name">
         <property name="font">
          <font>
           <pointsize>10</pointsize>
