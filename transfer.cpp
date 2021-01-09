@@ -35,8 +35,8 @@ void transfer::on_pushButton_main_clicked()
 void transfer::on_pushButton_clicked()
 {
     bool flag=false;
-    int account = ui->lineEdit_2->text().toInt();
-    int amount = ui->lineEdit_3->text().toInt();
+    int account = ui->lineEdit->text().toInt();
+    int amount = ui->lineEdit_2->text().toInt();
     head temp =MainWindow::user_top;
     do
     {
@@ -53,8 +53,10 @@ void transfer::on_pushButton_clicked()
     while(temp!=0);
     if(flag)
     {
+        qDebug()<<amount<<"and balance is"<<user->balance;
         if(amount<user->balance)
         {
+            qDebug()<<"done";
             user->balance-=amount;
             temp->balance+=amount;
         }

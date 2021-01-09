@@ -36,7 +36,7 @@ void withdraw::on_pushButton_clicked()
 
 void withdraw::on_pushButton_main_clicked()
 {
-    int amount = ui->lineEdit_3->text().toInt();
+    int amount = ui->lineEdit->text().toInt();
     if(user->balance<amount)
     {
 
