@@ -16,7 +16,8 @@ class MainPage : public QMainWindow
     Q_OBJECT
 
 public:
-    explicit MainPage(QWidget *parent = nullptr);
+    static head user;
+    explicit MainPage(QWidget *parent = nullptr,head ptr=nullptr);
     ~MainPage();
 
 private slots:
@@ -27,6 +28,8 @@ private slots:
     void on_pushButton_deposit_clicked();
 
     void on_pushButton_transfer_clicked();
+
+    void on_logout_clicked();
 
 private:
     Ui::MainPage *ui;

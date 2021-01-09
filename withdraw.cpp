@@ -14,7 +14,8 @@ withdraw::~withdraw()
     delete ui;
 }
 
-void withdraw::on_pushButton_main_clicked()
+
+void withdraw::on_pushButton_clicked()
 {
     MainPage *mainPage = new MainPage();
     mainPage->show();

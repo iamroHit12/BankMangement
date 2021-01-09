@@ -16,7 +16,8 @@ public:
     ~withdraw();
 
 private slots:
-    void on_pushButton_main_clicked();
+
+    void on_pushButton_clicked();
 
 private:
     Ui::withdraw *ui;
