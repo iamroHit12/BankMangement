@@ -4,7 +4,9 @@
 #include "ui_mainpage.h"
 #include "userlist.h"
 #include"usertransactions.h"
-#include<QDebug>
+#include"profile.h"
+#include<QMessageBox>
+#include<QString>
 head MainPage::user;
 MainPage::MainPage(QWidget *parent,head ptr) :
     QMainWindow(parent),
@@ -58,4 +60,16 @@ void MainPage::on_transaction_clicked()
     Usertransactions *transaction = new Usertransactions(nullptr,user);
     transaction->show();
     this->hide();
+}
+
+void MainPage::on_pushButton_2_clicked()
+{
+    Profile *profile = new Profile(nullptr,user);
+    profile->show();
+    this->hide();
+}
+
+void MainPage::on_balance_clicked()
+{
+    QMessageBox::about(this,"Balance","Your account balance is Rs."+QString::number(user->balance));
 }

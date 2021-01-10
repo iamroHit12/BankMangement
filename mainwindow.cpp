@@ -46,43 +46,50 @@ void MainWindow::on_pushButton_clicked()
     QString gender = gender_name[ui->gender->currentIndex()];
     QString account_type = type[ui->account_type->currentIndex()];
     QString number = ui->phone_no->text();
-    QString dob = ui->dateEdit->text();
+    QString dob = ui->dateEdit->date().toString("dd.MM.yyyy");
     int opening_amount = (ui->min_amount->text()).toInt();
-
-    Transaction *new_transaction = new Transaction();
-    new_transaction->type = "Deposit";
-    new_transaction->amount=opening_amount;
-    new_transaction->next=0;
-
-    User *user = new User();
-
-    user->name = name;
-    user->transaction = new_transaction;
-    user->aadhar = aadhar;
-    user->gender = gender;
-    user->account_type = account_type;
-    user->balance = opening_amount;
-    user->phone = number;
-    user->dob = dob;
-    user->account = count;
-    QString password = gen_rand(count);
-    user->password = password;
-    user->next = 0;
-
-    if (first)
+    if(opening_amount<500)
     {
-        user_top = user;
-        next = user;
-        first = false;
+        QMessageBox::warning(this,"Insufficient amount","Opening amount should be atleast 500");
     }
-    else
-    {
-        next->next = user;
-        next = user;
+    else{
+        Transaction *new_transaction = new Transaction();
+        new_transaction->type = "Opening amount";
+        new_transaction->amount=opening_amount;
+        new_transaction->next=0;
+        new_transaction->Date =QDate::currentDate().toString("dd.MM.yyyy");
+
+        User *user = new User();
+
+        user->name = name;
+        user->transaction = new_transaction;
+        user->aadhar = aadhar;
+        user->gender = gender;
+        user->account_type = account_type;
+        user->balance = opening_amount;
+        user->phone = number;
+        user->dob = dob;
+        user->account = count;
+        QString password = gen_rand(count);
+        user->password = password;
+        user->next = 0;
+
+        if (first)
+        {
+            user_top = user;
+            next = user;
+            first = false;
+        }
+        else
+        {
+            next->next = user;
+            next = user;
+        }
+        QString a = QString::number(count);
+        count++;
+        QMessageBox::about(this, "User confirmation", "account no. is " + a + "and password is " + password);
     }
-    QString a = QString::number(count);
-    count++;
-    QMessageBox::about(this, "User confirmation", "account no. is " + a + "and password is " + password);
+
 }
 
 void MainWindow::on_pushButton_menu_clicked()
