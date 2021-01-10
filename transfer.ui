@@ -32,6 +32,10 @@ background-color: qlineargradient(spread:pad, x1:0.379124, y1:0.552, x2:0.418294
 border-style:solid;
 border-color:rgb(0,0,0,0);
 border-radius:20px;
+
+QMessageBox{
+background-color:#ffff;
+}
 </string>
     </property>
     <property name="frameShape">
@@ -274,7 +278,7 @@ background:rgb(0,0,0,0)</string>
      <x>0</x>
      <y>0</y>
      <width>802</width>
-     <height>21</height>
+     <height>26</height>
     </rect>
    </property>
   </widget>
