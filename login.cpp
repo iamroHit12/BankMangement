@@ -3,6 +3,7 @@
 #include "admin.h"
 #include "mainwindow.h"
 #include"mainpage.h"
+#include<QMessageBox>
 #include<QDebug>
 Login::Login(QWidget *parent) :
     QDialog(parent),
@@ -33,6 +34,7 @@ void Login::on_adminLogin_clicked()
    else
    {
 
+       QMessageBox::warning(this,"Bad credentials","Invalid id or password");
    }
 
 }
@@ -66,7 +68,8 @@ void Login::on_userLogin_clicked()
             }
             else
             {
-                qDebug()<<"User not registered";
+
+                QMessageBox::warning(this,"Bad credentials","User not registered");
             }
             temp=temp->next;
 
@@ -75,7 +78,8 @@ void Login::on_userLogin_clicked()
 
     }
     else{
-        qDebug()<<"NO User registered";
+
+        QMessageBox::warning(this,"Bad credentials","No user registered yet");
     }
 
 }

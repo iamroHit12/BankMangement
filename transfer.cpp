@@ -3,6 +3,7 @@
 #include "mainpage.h"
 #include "mainwindow.h"
 #include "admin.h"
+#include<QMessageBox>
 #include <QDebug>
 transfer::transfer(QWidget *parent,head user) :
     QMainWindow(parent),
@@ -53,21 +54,44 @@ void transfer::on_pushButton_clicked()
     while(temp!=0);
     if(flag)
     {
-        qDebug()<<amount<<"and balance is"<<user->balance;
-        if(amount<user->balance)
+        if(amount<=user->balance)
         {
-            qDebug()<<"done";
-            user->balance-=amount;
-            temp->balance+=amount;
+            Transaction *last_transaction=user->transaction;
+            Transaction *reciever_last_transaction=temp->transaction;
+            if(last_transaction)
+            {
+                while(last_transaction->next!=0){
+                    last_transaction=last_transaction->next;
+                }
+
+
+            }
+             Transaction *new_transaction=new Transaction();
+             Transaction *new_reciever_transaction=new Transaction();
+             new_transaction->amount=amount;
+             new_transaction->Date=ui->dateEdit->text();
+             new_transaction->type="Sent";
+             new_transaction->next=0;
+             new_transaction->recepient=ui->lineEdit->text();
+             last_transaction->next=new_transaction;
+             new_reciever_transaction->amount=amount;
+             new_reciever_transaction->Date=ui->dateEdit->text();
+             new_reciever_transaction->type="Recieved";
+             new_reciever_transaction->next=0;
+             reciever_last_transaction->next=new_reciever_transaction;
+             user->balance-=amount;
+             temp->balance+=amount;
         }
         else
         {
-            qDebug()<<"Insufficient balance";
+
+            QMessageBox::warning(this,"Invalid amount","amount exceeds balance");
         }
 
     }
     else
     {
-        qDebug()<<"Use not found";
+
+        QMessageBox::warning(this,"Bad credentials","Invalid account no.");
     }
 }

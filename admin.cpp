@@ -5,6 +5,9 @@
 #include "transfer.h"
 #include "login.h"
 #include "mainwindow.h"
+#include"userlist.h"
+#include"usertransactions.h"
+#include<QMessageBox>
 #include<QDebug>
 Admin::Admin(QWidget *parent) :
     QWidget(parent),
@@ -76,13 +79,14 @@ void Admin::on_searchUser_clicked()
           ui->userInfo->show();
       }
       else{
-          qDebug()<<"Invalid account no.";
+          QMessageBox::warning(this,"Bad credentials","Invalid account no.");
           ui->userInfo->hide();
       }
   }
   else
   {
-      qDebug()<<"No User Found";
+
+      QMessageBox::warning(this,"Bad credentials","No user found");
   }
 }
 
@@ -98,4 +102,19 @@ void Admin::on_logout_clicked()
    Login *login = new Login();
    login->show();
    this->hide();
+}
+
+void Admin::on_pushButton_clicked()
+{
+    UserList *list = new UserList();
+    list->show();
+    this->hide();
+
+}
+
+void Admin::on_transactions_clicked()
+{
+    Usertransactions *transaction = new Usertransactions(nullptr,user);
+    transaction->show();
+    this->hide();
 }

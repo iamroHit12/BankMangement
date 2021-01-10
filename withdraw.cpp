@@ -3,7 +3,8 @@
 #include"admin.h"
 #include "mainpage.h"
 #include<QDebug>
-
+#include"transaction.h"
+#include<QMessageBox>
 withdraw::withdraw(QWidget *parent,head user) :
     QMainWindow(parent),
     user(user),
@@ -40,12 +41,28 @@ void withdraw::on_pushButton_main_clicked()
     if(user->balance<amount)
     {
 
-        qDebug()<<"Not allowed low balance";
+
+        QMessageBox::warning(this,"Invalid amount","Account balance lower than amount");
     }
     else
     {
         user->balance-=amount;
+        Transaction *last_transaction=user->transaction;
 
-        qDebug()<<"transaction completed";
+        if(last_transaction)
+        {
+           while(last_transaction->next!=0){
+                last_transaction=last_transaction->next;
+            }
+
+
+        }
+         Transaction *new_transaction=new Transaction();
+         new_transaction->amount=amount;
+         new_transaction->Date=ui->dateEdit->text();
+         new_transaction->type="Withdraw";
+         new_transaction->next=0;
+         last_transaction->next=new_transaction;
+         QMessageBox::information(this,"Withdraw","Transaction completed");
     }
 }

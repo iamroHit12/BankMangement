@@ -23,11 +23,13 @@ public:
 private slots:
     void on_pushButton_withdraw_clicked();
 
-    void on_pushButton_deposit_clicked();
-
     void on_pushButton_transfer_clicked();
 
     void on_logout_clicked();
+
+    void on_pushButton_openaccount_clicked();
+
+    void on_transaction_clicked();
 
 private:
     Ui::MainPage *ui;

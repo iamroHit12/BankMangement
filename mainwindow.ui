@@ -20,10 +20,10 @@
    <widget class="QFrame" name="frame">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>40</y>
-      <width>721</width>
-      <height>501</height>
+      <x>30</x>
+      <y>20</y>
+      <width>791</width>
+      <height>521</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -43,7 +43,7 @@ border-radius:20px;
     <widget class="QLineEdit" name="aadhar_no">
      <property name="geometry">
       <rect>
-       <x>520</x>
+       <x>570</x>
        <y>170</y>
        <width>171</width>
        <height>27</height>
@@ -63,7 +63,7 @@ padding-left:10px;</string>
     <widget class="QLineEdit" name="min_amount">
      <property name="geometry">
       <rect>
-       <x>520</x>
+       <x>570</x>
        <y>370</y>
        <width>171</width>
        <height>27</height>
@@ -86,7 +86,7 @@ padding-left:10px;</string>
     <widget class="QLineEdit" name="customer_name">
      <property name="geometry">
       <rect>
-       <x>520</x>
+       <x>570</x>
        <y>70</y>
        <width>171</width>
        <height>27</height>
@@ -106,7 +106,7 @@ padding-left:10px;</string>
     <widget class="QLineEdit" name="phone_no">
      <property name="geometry">
       <rect>
-       <x>520</x>
+       <x>570</x>
        <y>270</y>
        <width>171</width>
        <height>27</height>
@@ -126,7 +126,7 @@ padding-left:10px;</string>
     <widget class="QDateEdit" name="dateEdit">
      <property name="geometry">
       <rect>
-       <x>520</x>
+       <x>570</x>
        <y>120</y>
        <width>171</width>
        <height>27</height>
@@ -146,7 +146,7 @@ padding-left:10px;</string>
     <widget class="QComboBox" name="gender">
      <property name="geometry">
       <rect>
-       <x>520</x>
+       <x>570</x>
        <y>220</y>
        <width>171</width>
        <height>27</height>
@@ -181,9 +181,9 @@ padding-left:10px;</string>
     <widget class="QLabel" name="label_10">
      <property name="geometry">
       <rect>
-       <x>320</x>
+       <x>370</x>
        <y>170</y>
-       <width>131</width>
+       <width>181</width>
        <height>31</height>
       </rect>
      </property>
@@ -201,15 +201,15 @@ background:rgb(0,0,0,0);
 color:rgb(0, 0, 127)</string>
      </property>
      <property name="text">
-      <string>Addhaar No.</string>
+      <string>Aadhaar No.</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_12">
      <property name="geometry">
       <rect>
-       <x>320</x>
+       <x>370</x>
        <y>370</y>
-       <width>151</width>
+       <width>181</width>
        <height>31</height>
       </rect>
      </property>
@@ -233,9 +233,9 @@ color:rgb(0, 0, 127)</string>
     <widget class="QLabel" name="label_3">
      <property name="geometry">
       <rect>
-       <x>320</x>
+       <x>370</x>
        <y>70</y>
-       <width>161</width>
+       <width>201</width>
        <height>31</height>
       </rect>
      </property>
@@ -259,9 +259,9 @@ color:rgb(0, 0, 127)</string>
     <widget class="QLabel" name="label_5">
      <property name="geometry">
       <rect>
-       <x>320</x>
+       <x>370</x>
        <y>270</y>
-       <width>111</width>
+       <width>141</width>
        <height>31</height>
       </rect>
      </property>
@@ -285,9 +285,9 @@ color:rgb(0, 0, 127)</string>
     <widget class="QLabel" name="label_6">
      <property name="geometry">
       <rect>
-       <x>320</x>
+       <x>370</x>
        <y>120</y>
-       <width>131</width>
+       <width>201</width>
        <height>31</height>
       </rect>
      </property>
@@ -311,9 +311,9 @@ color:rgb(0, 0, 127)</string>
     <widget class="QLabel" name="label_8">
      <property name="geometry">
       <rect>
-       <x>320</x>
+       <x>370</x>
        <y>220</y>
-       <width>91</width>
+       <width>111</width>
        <height>31</height>
       </rect>
      </property>
@@ -337,9 +337,9 @@ color:rgb(0, 0, 127)</string>
     <widget class="QLabel" name="label_9">
      <property name="geometry">
       <rect>
-       <x>320</x>
+       <x>370</x>
        <y>320</y>
-       <width>151</width>
+       <width>191</width>
        <height>31</height>
       </rect>
      </property>
@@ -363,7 +363,7 @@ color:rgb(0, 0, 127)</string>
     <widget class="QComboBox" name="account_type">
      <property name="geometry">
       <rect>
-       <x>520</x>
+       <x>570</x>
        <y>320</y>
        <width>171</width>
        <height>31</height>
@@ -393,8 +393,8 @@ padding-left:10px;</string>
     <widget class="QPushButton" name="pushButton">
      <property name="geometry">
       <rect>
-       <x>400</x>
-       <y>430</y>
+       <x>440</x>
+       <y>440</y>
        <width>181</width>
        <height>51</height>
       </rect>
@@ -420,7 +420,7 @@ border-radius:10px;</string>
       <rect>
        <x>70</x>
        <y>320</y>
-       <width>131</width>
+       <width>181</width>
        <height>51</height>
       </rect>
      </property>
@@ -443,9 +443,9 @@ border-radius:10px;</string>
     <widget class="QLabel" name="label">
      <property name="geometry">
       <rect>
-       <x>80</x>
-       <y>110</y>
-       <width>121</width>
+       <x>50</x>
+       <y>100</y>
+       <width>181</width>
        <height>71</height>
       </rect>
      </property>
@@ -469,7 +469,7 @@ background:rgb(0,0,0,0)</string>
       <rect>
        <x>50</x>
        <y>190</y>
-       <width>191</width>
+       <width>221</width>
        <height>61</height>
       </rect>
      </property>
@@ -496,7 +496,7 @@ background:rgb(0,0,0,0)</string>
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>26</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>

@@ -2,7 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-
+#include "transaction.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -17,6 +17,7 @@ typedef struct user{
     QString dob;
     QString phone;
     QString aadhar;
+    Transaction *transaction;
     int balance;
     struct user *next;
 
