@@ -14,7 +14,10 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: qlineargradient(spread:pad, x1:0.433199, y1:0.506, x2:0.502, y2:0.437591, stop:0 rgba(90, 90, 255, 255), stop:0.606965 rgba(174, 135, 179, 255));</string>
+   <string notr="true">background-color: qlineargradient(spread:pad, x1:0.433199, y1:0.506, x2:0.502, y2:0.437591, stop:0 rgba(90, 90, 255, 255), stop:0.606965 rgba(174, 135, 179, 255));
+QMessageBox{
+background-color:none;
+}</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QFrame" name="frame">

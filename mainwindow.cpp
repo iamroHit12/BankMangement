@@ -47,8 +47,15 @@ void MainWindow::on_pushButton_clicked()
     QString account_type = type[ui->account_type->currentIndex()];
     QString number = ui->phone_no->text();
     QString dob = ui->dateEdit->date().toString("dd.MM.yyyy");
+
     int opening_amount = (ui->min_amount->text()).toInt();
-    if(opening_amount<500)
+    if(name==""||aadhar==""||number=="")
+    {
+
+
+        QMessageBox::warning(this,"Credential empty","Kindly fill all the details");
+    }
+    else if(opening_amount<500)
     {
         QMessageBox::warning(this,"Insufficient amount","Opening amount should be atleast 500");
     }
@@ -87,7 +94,7 @@ void MainWindow::on_pushButton_clicked()
         }
         QString a = QString::number(count);
         count++;
-        QMessageBox::about(this, "User confirmation", "account no. is " + a + "and password is " + password);
+        QMessageBox::about(this, "User confirmation", "account no. is " + a + " and password is " + password);
     }
 
 }
