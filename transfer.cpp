@@ -3,6 +3,7 @@
 #include "mainpage.h"
 #include "mainwindow.h"
 #include "admin.h"
+#include<QMessageBox>
 #include <QDebug>
 transfer::transfer(QWidget *parent,head user) :
     QMainWindow(parent),
@@ -83,12 +84,14 @@ void transfer::on_pushButton_clicked()
         }
         else
         {
-            qDebug()<<"Insufficient balance";
+
+            QMessageBox::warning(this,"Invalid amount","amount exceeds balance");
         }
 
     }
     else
     {
-        qDebug()<<"Use not found";
+
+        QMessageBox::warning(this,"Bad credentials","Invalid account no.");
     }
 }

@@ -43,12 +43,12 @@ void deposit::on_pushButton_deposit_clicked()
   new_transaction->type="Deposit";
   new_transaction->next=0;
   last_transaction->next=new_transaction;
-  qDebug()<<"transaction completed";
+
+  QMessageBox::information(this,"Deposit","Transaction completed");
 }
 
 void deposit::on_pushButton_mainmenu_clicked()
 {
-    qDebug()<<"deposit clicked";
     if(MainWindow::session=="user")
     {
         MainPage *mainPage = new MainPage(nullptr,user);

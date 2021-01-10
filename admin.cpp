@@ -7,6 +7,7 @@
 #include "mainwindow.h"
 #include"userlist.h"
 #include"usertransactions.h"
+#include<QMessageBox>
 #include<QDebug>
 Admin::Admin(QWidget *parent) :
     QWidget(parent),
@@ -78,13 +79,14 @@ void Admin::on_searchUser_clicked()
           ui->userInfo->show();
       }
       else{
-          qDebug()<<"Invalid account no.";
+          QMessageBox::warning(this,"Bad credentials","Invalid account no.");
           ui->userInfo->hide();
       }
   }
   else
   {
-      qDebug()<<"No User Found";
+
+      QMessageBox::warning(this,"Bad credentials","No user found");
   }
 }
 
