@@ -15,6 +15,7 @@ SOURCES += \
     main.cpp \
     mainpage.cpp \
     mainwindow.cpp \
+    profile.cpp \
     transfer.cpp \
     userlist.cpp \
     usertransactions.cpp \
@@ -26,6 +27,7 @@ HEADERS += \
     login.h \
     mainpage.h \
     mainwindow.h \
+    profile.h \
     transaction.h \
     transfer.h \
     userlist.h \
@@ -38,6 +40,7 @@ FORMS += \
     login.ui \
     mainpage.ui \
     mainwindow.ui \
+    profile.ui \
     transfer.ui \
     userlist.ui \
     usertransactions.ui \

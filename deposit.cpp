@@ -39,7 +39,7 @@ void deposit::on_pushButton_deposit_clicked()
   user->balance+=amount.toInt();
   Transaction *new_transaction=new Transaction();
   new_transaction->amount=amount.toInt();
-  new_transaction->Date=ui->dateEdit->text();
+  new_transaction->Date=ui->dateEdit->date().toString("dd.MM.yyyy");
   new_transaction->type="Deposit";
   new_transaction->next=0;
   last_transaction->next=new_transaction;

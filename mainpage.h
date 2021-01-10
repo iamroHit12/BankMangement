@@ -31,6 +31,10 @@ private slots:
 
     void on_transaction_clicked();
 
+    void on_pushButton_2_clicked();
+
+    void on_balance_clicked();
+
 private:
     Ui::MainPage *ui;
     withdraw *Withdraw;
