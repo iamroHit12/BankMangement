@@ -36,7 +36,10 @@ void transfer::on_pushButton_main_clicked()
 void transfer::on_pushButton_clicked()
 {
     bool flag=false;
-    int account = ui->lineEdit->text().toInt();
+    QString acc_no = ui->lineEdit->text();
+    int account =-1;
+    if(acc_no!="")
+        account = acc_no.toInt();
     int amount = ui->lineEdit_2->text().toInt();
     head temp =MainWindow::user_top;
     do
